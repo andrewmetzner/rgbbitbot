@@ -26,9 +26,6 @@ public class ComputeContext {
         if (scalePower > MAX_ZOOM) throw new RuntimeException("Scale too high!");
     }
 
-    /**
-     * Compute a pixel grid using a Function2D and render it as an image.
-     */
     public BufferedImage computeAndRender(Function2D fn) {
         Grid pixels = new Grid(extent, extent);
         pixels.map(fn::apply);

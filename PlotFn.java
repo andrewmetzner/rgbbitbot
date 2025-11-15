@@ -1,6 +1,5 @@
 import java.util.Random;
 
-// Base class
 abstract class PlotFn {
     public abstract double eval(int x, int y);
 

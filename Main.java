@@ -42,7 +42,6 @@ public class Main {
         String imgFilename = baseName + ".png";
         String txtFilename = baseName + ".txt";
 
-	// Make sure media directory exists
 	File mediaDir = new File("media");
 	if (!mediaDir.exists()) {
 	    mediaDir.mkdirs();
